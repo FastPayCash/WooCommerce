@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: JM Redwan
+Contributors: JM Redwan, SSLWIRELESS
 Tags: WooCommerce, Payment Gateway, fastpay
 Requires at least: 3.3
 Tested up to: 3.5
@@ -9,7 +9,8 @@ fastpay is a Bangladeshi Payment Gateway with the WooCommerce plugin.
 
 == Description ==
 
-This is the fastpay payment gateway for WooCommerce. Allows you to use fastpay payment gateway with the WooCommerce plugin. fastpay is a Bangladeshi Payment Gateway.
+This is the fastpay payment gateway for WooCommerce. Allows you to use fastpay wallet with the WooCommerce plugin. 
+
  Allows you to use fastpay payment gateway with the WooCommerce plugin. It uses the redirect method, the user is redirected to fastpay so that you don't have to install an SSL certificate on your site.
 
 == Installation ==
@@ -17,20 +18,14 @@ This is the fastpay payment gateway for WooCommerce. Allows you to use fastpay p
 2. Unzip and upload contents of the plugin to your /wp-content/plugins/ directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
-== Screenshots ==
-1. WooCommerce payment gateway setting page
-2. fastpay setting page
-3. Success message
-4. Info message if the payment for this transaction has been made by an American Express Card
-5. Transaction declined Message
-6. fastpay Payment gateway option at the checkout page
+ay Payment gateway option at the checkout page
 
 
 == Configuration ==
 
 1. Visit the WooCommerce settings page, and click on the Payment Gateways tab.
 2. Click on fastpay to edit the settings. If you do not see fastpay in the list at the top of the screen make sure you have activated the plugin in the WordPress Plugin Manager.
-3. Enable the Payment Method, name it FastPay (this will show up on the payment page your customer section), add in your merchand id and working key and select redirect url(URL you want fastpay to redirect after payment). Click Save.
+3. Enable the Payment Method, name it FastPay (this will show up on the payment page your customer section), add in your store id and working key and select redirect url(URL you want fastpay to redirect after payment). Click Save.
 
 == Changelog ==
 
