@@ -5,7 +5,7 @@ Requires at least: 3.3
 Tested up to: 3.5
 Stable tag: 1.2.2
 License: GPLv2 or later
-fastpay is a Bangladeshi Payment Gateway with the WooCommerce plugin.
+fastpay is a Kurdis Payment Gateway with the WooCommerce plugin.
 
 == Description ==
 
