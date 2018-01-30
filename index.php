@@ -147,12 +147,19 @@ $this -> testValidationURL  = 'https://dev.fast-pay.cash/merchant/payment/valida
             $declineURL = $order->get_cancel_order_url();
 $amount = $order -> order_total;
 $from = get_option('woocommerce_currency');
+
+if($from=='IQD'){
+$totalBillingAmount = round($amount, 2);
+}
+else {
 $to = 'IQD';
 $url  = "https://finance.google.com/finance/converter?a=$amount&from=$from&to=$to";
+echo 
     $data = file_get_contents($url);
     preg_match("/<span class=bld>(.*)<\/span>/",$data, $converted);
     $converted = preg_replace("/[^0-9.]/", "", $converted[1]);
 $totalBillingAmount = round($converted, 2);
+}
             $fastpay_param = array(
                 'merchant_mobile_no'      => $this -> merchant_id,
                 'bill_amount'           => $totalBillingAmount,
@@ -207,7 +214,6 @@ $fastpay_args = array(
         foreach($fastpay_args as $key => $value){
           $fastpay_args_array[] = "<input type='hidden' name='$key' value='$value'/>";
         }
-		
 	   
 		
         return '<form action="'.$processURL.'" method="post" id="fastpay_payment_form">
