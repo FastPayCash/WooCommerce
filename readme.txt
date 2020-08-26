@@ -1,38 +1,43 @@
 === Plugin Name ===
-Contributors: JM Redwan, SSLWIRELESS
-Tags: WooCommerce, Payment Gateway, fastpay
-Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 1.2.2
+Contributors: JM Redwan, Leton Miah
+Tags: WooCommerce, Payment Gateway, FastPay, IPN
+Requires at least: 4.9
+Tested up to: 5.3.2
+Stable tag: 3.0.1
 License: GPLv2 or later
-fastpay is a Kurdis Payment Gateway with the WooCommerce plugin.
+FastPay is Iraq’s quickest, most convenient, and safest mobile wallet with the WooCommerce plugin.
 
 == Description ==
 
-This is the fastpay payment gateway for WooCommerce. Allows you to use fastpay wallet with the WooCommerce plugin. 
+This is the FastPay payment gateway for WooCommerce. Allows you to use FastPay mobile wallet with the WooCommerce plugin.
 
- Allows you to use fastpay payment gateway with the WooCommerce plugin. It uses the redirect method, the user is redirected to fastpay so that you don't have to install an SSL certificate on your site.
+
+== Prerequisites ==
+
+1. Wordpress 5.*.*
+2. WooCommerce 3.*.*
+3. cURL php extension.
 
 == Installation ==
-1. Ensure you have latest version of WooCommerce plugin installed
-2. Unzip and upload contents of the plugin to your /wp-content/plugins/ directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
 
-ay Payment gateway option at the checkout page
-
+1. Download zip file or Clone the repository.
+2. Unzip if downloaded zip file.
+3. Move the whole directory to "/wp-content/plugins/"
+4. Activate the plugin through the 'Plugins' menu in admin panel.
 
 == Configuration ==
 
-1. Visit the WooCommerce settings page, and click on the Payment Gateways tab.
-2. Click on fastpay to edit the settings. If you do not see fastpay in the list at the top of the screen make sure you have activated the plugin in the WordPress Plugin Manager.
-3. Enable the Payment Method, name it FastPay (this will show up on the payment page your customer section), add in your store id and working key and select redirect url(URL you want fastpay to redirect after payment). Click Save.
+1. Open Admin Panel.
+2. Navigate to "Woocommerce > Settings > Payments" tab.
+3. Click on FastPay to edit the settings. If you do not see FastPay in the list at the top of the screen make sure you have activated the plugin in the WordPress Plugin Manager.
+4. Enable the Payment Method, give a proper title and description to show on the checkout page,  fill up stroe id and store passowrd fields carefully, select success and fail/cancel page.
+5. Find the IPN URL. It will look like "[your site]/index.php?fastpayipn". Copy this URL, Send it to our support team.
+6. Setup is complete. Check if everything is working properly.
 
-== Changelog ==
+== FAQ ==
 
-= 1.0 =
-* First Public Release.
+### What is WooCommerce?
+> WooCommerce is an open-source e-commerce plugin for WordPress. 
 
-== Upgrade Notice ==
-
-= 1.0 =
-* First Public Release.
+### What is FastPay?
+> FastPay is Iraq’s quickest, most convenient, and safest mobile wallet where millions of customers will have their smart money for Shopping, Mobile recharge, Internet recharge, Money transfers, Bill payments and more.
