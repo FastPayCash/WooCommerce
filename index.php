@@ -244,7 +244,14 @@ function woocommerce_fastpay_init()
                 exit;
             }
 			
-            $redirect_url = $this->testurl."merchant/payment?token=".$responseDecode['token'];
+            if ($this->testmode == 'yes') {
+               
+				$redirect_url = $this->testurl."merchant/payment?token=".$responseDecode['token'];
+				
+            } else {
+                
+				$redirect_url = $this->liveurl."merchant/payment?token=".$responseDecode['token'];
+            }
 			
             return '<form action="'.$redirect_url.'" method="post" id="fastpay_payment_form">
                 <input type="submit" class="button-alt" id="submit_fastpay_payment_form" value="' . __('Pay via Fastpay', 'fastpay') . '" /> <a class="button cancel" href="' . $order->get_cancel_order_url() . '">' . __('Cancel order &amp; restore cart', 'fastpay') . '</a>
