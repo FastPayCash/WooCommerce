@@ -234,7 +234,8 @@ function woocommerce_fastpay_init()
 
                 if ($responseDecode['code'] != '200') {
                     echo "FAILED TO CONNECT WITH FastPay API";
-                    echo "<br/>Failed Reason: " . $responseDecode['messages'];
+                    echo "<br/>Failed Reason: ";
+		    print_r($responseDecode['messages']);
                     exit;
                 }
 				
